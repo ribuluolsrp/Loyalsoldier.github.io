@@ -38,7 +38,7 @@ def main():
     if arguments['--dir'] is not None:
         static_path = arguments['--dir']
     else:
-        static_path = os.path.join(os.getcwd(), 'static')
+        static_path = os.path.join(os.getcwd(), '../../')
 
     if arguments['generate']:
         command = ("wget "
