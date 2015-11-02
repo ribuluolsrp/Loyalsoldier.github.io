@@ -1,4 +1,4 @@
-# Loyalsoldier.github.io
+# 前端养成记
 我的技术博客《前端养成记》：关于网页重构、前端开发、设计等 | My blog on programming and design.
 
 ## Preparation
@@ -23,12 +23,12 @@ npm start --production   // start the Ghost server
  
 5. After you finish your blog, run
 
-```shell
-cd buster/buster // go into the folder where the buster.py is
-python buster.py generate // let buster.py compile and copy the static resources that your use in your blog
-python buster.py preview  // let buster.py start a local server at port 9000
+ ```shell
+ cd buster/buster // go into the folder where the buster.py is
+ python buster.py generate // buster.py will compile and copy the static resources that your use in your blog
+ python buster.py preview  // buster.py will start a local server at port 9000
 
 // open your browser. access to http://localhost:9000, the static ghost is there.
-```
-
-6. Commit your root folder to Github repo `username.github.io` (which `username` converts to your own Github username)
+ ```
+ 
+6. Commit your root folder to Github repo `username.github.io` in which `username` replace to your own Github username
