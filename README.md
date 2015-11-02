@@ -32,3 +32,6 @@ npm start --production   // start the Ghost server
  ```
  
 6. Commit your root folder to Github repo `username.github.io` in which `username` replace to your own Github username
+
+## LICENSE
+[MIT](https://github.com/Loyalsoldier/Loyalsoldier.github.io/blob/master/LICENSE)
