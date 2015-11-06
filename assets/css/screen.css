@@ -194,7 +194,6 @@ table { border-collapse: collapse; border-spacing: 0; }
     -moz-osx-font-smoothing: grayscale;
 }
 
-
 .iconfont-24{
     font-family:"iconfont" !important;
     font-size:24px;font-style:normal;
@@ -296,7 +295,10 @@ p, ul, ol, dl {
     text-rendering: geometricPrecision;
 }
 
-p a {
+p a,
+blockquote a,
+ol a,
+ul a {
     color: #5A84E4;
 }
 
