@@ -174,7 +174,6 @@ table { border-collapse: collapse; border-spacing: 0; }
 /* ==========================================================================
    2. General - Setting up some base styles
    ========================================================================== */
-
 /**
  * iconfont.cn fonts
  */
@@ -188,7 +187,8 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 .iconfont, .iconfont-16{
     font-family:"iconfont" !important;
-    font-size:16px;font-style:normal;
+    font-size:16px;
+    font-style:normal;
     -webkit-font-smoothing: antialiased;
     -webkit-text-stroke-width: 0.2px;
     -moz-osx-font-smoothing: grayscale;
@@ -203,11 +203,11 @@ table { border-collapse: collapse; border-spacing: 0; }
     -moz-osx-font-smoothing: grayscale;
 }
 
-
 html {
     height: 100%;
     max-height: 100%;
     font-size: 62.5%;
+    text-align: justify;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -240,24 +240,26 @@ h4, h5, h6 {
     -o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
     color: #2E2E2E;
     line-height: 1.15em;
-    margin: 0 0 0.4em 0;
+    margin: 0 0 0.8em 0;
+    padding-top: .5em;
     font-family: "San Francisco", "Helvetica Neue", "Lucida Grande", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Microhei", "Microsoft Yahei", Arial, sans-serif;
     text-rendering: geometricPrecision;
 }
 
 h1 {
+    padding-top: 0;
     font-size: 5rem;
-    letter-spacing: -2px;
+    letter-spacing: -1px;
     text-indent: -3px;
 }
 
 h2 {
-    font-size: 3.6rem;
+    font-size: 3.2rem;
     letter-spacing: -1px;
 }
 
 h3 {
-    font-size: 3rem;
+    font-size: 2.8rem;
 }
 
 h4 {
@@ -265,20 +267,26 @@ h4 {
 }
 
 h5 {
-    font-size: 2rem;
+    font-size: 2.3rem;
 }
 
 h6 {
-    font-size: 2rem;
+    font-size: 2.1rem;
 }
 
 a {
     color: #4A4A4A;
+    text-decoration: underline;
     transition: color 0.3s ease;
 }
 
 a:hover {
     color: #111;
+}
+
+strong a {
+    text-decoration: none;
+    color: #5A84E4;
 }
 
 p, ul, ol, dl {
@@ -287,6 +295,11 @@ p, ul, ol, dl {
     -o-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
     margin: 0 0 1.75em 0;
     text-rendering: geometricPrecision;
+}
+
+p + ol,
+p + ul {
+    margin-top: -1em;
 }
 
 ol, ul {
@@ -334,16 +347,27 @@ hr {
 }
 
 blockquote {
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 1.75em 0 1.75em -2.2em;
-    padding: 0 0 0 1.75em;
-    border-left: #4A4A4A 0.4em solid;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 1.75em 0 1.75em -1.4em;
+    padding: 0 0 0 1.3em;
+    border-left: #4A4A4A 0.26em solid;
+}
+
+blockquote strong {
+    font-weight: 600;
 }
 
 blockquote p {
-    margin: 0.8em 0;
-    font-style: italic;
+    margin: 0.4em 0 !important;
+    font-weight: 300;
+    line-height: 1.6em;
+}
+
+blockquote p + ul,
+blockquote p + ol {
+    margin-top: 0;
 }
 
 blockquote small {
@@ -362,7 +386,16 @@ blockquote cite {
 blockquote cite a { font-weight: normal; }
 
 mark {
-    background-color: #fdffb6;
+    background-color: #EBF3F8;
+    color: #484848;
+    border-radius: 2px;
+}
+
+mark code {
+    margin: 0 2px;
+    border: #E3EDF3 1px solid;
+    color: #3d3d3d;
+    text-align: left;
 }
 
 code, tt {
@@ -373,6 +406,7 @@ code, tt {
     border: #E3EDF3 1px solid;
     background: #F7FAFB;
     border-radius: 2px;
+    text-align: left;
 }
 
 pre {
@@ -991,7 +1025,7 @@ body:not(.post-template) .post-title {
 
 .post-meta {
     display: block;
-    margin: 1.75rem 0 0 0;
+    margin: 0.8rem 0 0 0 !important;
     font-family: "San Francisco", "Helvetica Neue", "Lucida Grande", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Microhei", "Microsoft Yahei", Arial, sans-serif;
     font-size: 1.5rem;
     line-height: 2.2rem;
@@ -1150,7 +1184,7 @@ body:not(.post-template) .post-title {
 /* The author credit area after the post */
 .post-footer {
     position: relative;
-    margin: 6rem 0 0 0;
+    margin: 12rem 0 0 0;
     padding: 6rem 0 0 0;
     border-top: #EBF2F6 1px solid;
 }
@@ -1639,6 +1673,16 @@ body:not(.post-template) .post-title {
 
     blockquote {
         margin-left: 0;
+        padding-left: 1em;
+    }
+
+    p + ol,
+    p + ul {
+        margin-top: -.5em;
+    }
+
+    p {
+        margin-bottom: 1em;
     }
 
     .main-header {
@@ -1699,11 +1743,11 @@ body:not(.post-template) .post-title {
     }
 
     h3 {
-        font-size: 3.1rem;
+        font-size: 3.2rem;
     }
 
     h4 {
-        font-size: 2.5rem;
+        font-size: 2.6rem;
     }
 
     h5 {
@@ -1711,7 +1755,7 @@ body:not(.post-template) .post-title {
     }
 
     h6 {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     .author-profile {
@@ -1775,8 +1819,22 @@ body:not(.post-template) .post-title {
 
 @media only screen and (max-width: 500px) {
 
+    html,
+    body {
+        text-align: left;
+    }
+
+    blockquote {
+        padding-left: 0.6em;
+    }
+
+    blockquote ul,
+    blockquote ol {
+        padding-left: 1.4em;
+    }
+
     .main-header {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         height: 40%;
     }
 
@@ -1861,8 +1919,8 @@ body:not(.post-template) .post-title {
         width: auto;
         margin-top: 2rem;
         margin-bottom: 2rem;
-        margin-left: 16px;
-        margin-right: 16px;
+        margin-left: 20px;
+        margin-right: 20px;
         padding-bottom: 2rem;
         line-height: 1.65em;
     }
@@ -1886,6 +1944,10 @@ body:not(.post-template) .post-title {
     p, ul, ol, dl {
         font-size: 0.95em;
         margin: 0 0 2.5rem 0;
+    }
+
+    ol, ul {
+        padding-left: 1.7em;
     }
 
     .page-title {
@@ -1952,7 +2014,8 @@ body:not(.post-template) .post-title {
     }
 
     .post-footer {
-        padding: 5rem 0 3rem 0;
+        margin-top: 10rem;
+        padding: 5rem 0 0 0;
         text-align: center;
     }
 
