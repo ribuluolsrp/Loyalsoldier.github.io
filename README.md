@@ -11,9 +11,10 @@
 1. Download the [Ghost](https://github.com/TryGhost/Ghost/releases) or [Ghost-zh-cn build by DianYun.com](https://github.com/diancloud/Ghost/releases)
 2. Unzip Ghost
 3. Get the Buster, which is to make ghost blog static: `git clone https://github.com/Misiur/buster.git`
-4. Go into the root path of the project, and then
+4. Go into the root of the project, then
 
  ```shell
+npm install              // wait for completion
 cd ghost                 // go into the ghost folder
 npm install --production // install the dependencies for production environment
 npm start --production   // start the Ghost server
