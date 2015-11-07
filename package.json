@@ -1,0 +1,32 @@
+{
+  "name": "loyalsoldier-blog",
+  "version": "2.2.3",
+  "description": "A Frontend-cultivation blog by Loyalsoldier",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Loyalsoldier/Loyalsoldier.github.io.git"
+  },
+  "keywords": [
+    "frontend",
+    "blog",
+    "loyalsoldier"
+  ],
+  "author": "Loyalsoldier <loyalsoldier@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Loyalsoldier/Loyalsoldier.github.io/issues"
+  },
+  "homepage": "https://github.com/Loyalsoldier/Loyalsoldier.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cssshrink": "^0.1.5",
+    "gulp-image": "^1.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.4.2"
+  }
+}

@@ -1,2 +1,4 @@
-buster/
+node_modules/
 Ghost/
+buster/
+public/jquery.min.js@*
