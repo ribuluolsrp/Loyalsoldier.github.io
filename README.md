@@ -33,5 +33,9 @@ npm start --production   // start the Ghost server
  
 6. Commit your root folder to Github repo `username.github.io` in which `username` replace to your own Github username
 
+## How I built this blog?
+
+See here: [《“前端养成记”博客上线历程》](http://loyalsoldier.me/my-frontend-cultivation-blog-launched)
+
 ## LICENSE
 [MIT](https://github.com/Loyalsoldier/Loyalsoldier.github.io/blob/master/LICENSE)
