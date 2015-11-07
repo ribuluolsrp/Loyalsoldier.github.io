@@ -243,10 +243,6 @@ h4, h5, h6 {
     padding-top: .5em;
     font-family: "San Francisco", "Helvetica Neue", "Lucida Grande", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Microhei", "Microsoft Yahei", Arial, sans-serif;
     text-rendering: geometricPrecision;
-    -webkit-margin-before: 0 !important;
-    -webkit-margin-after: 0 !important;
-    -webkit-margin-start: 0 !important;
-    -webkit-margin-end: 0 !important;
 }
 
 h1 {
@@ -1483,6 +1479,11 @@ body:not(.post-template) .post-title {
 
 
 .read-next-story h2 {
+    padding-bottom: 10px;
+    -webkit-margin-before: 0 !important;
+    -webkit-margin-after: 0 !important;
+    -webkit-margin-start: 0 !important;
+    -webkit-margin-end: 0 !important;
     margin-top: 1rem;
     color: #fff;
 }
