@@ -15,9 +15,8 @@
 
  ```shell
 npm install              // wait for completion
-cd ghost                 // go into the ghost folder
 npm install --production // install the dependencies for production environment
-npm start --production   // start the Ghost server
+npm run serve            // start the Ghost server in production environment
 
 // open your browser, access to http://localhost:2368, the Ghost is there waiting for you
  ```
@@ -25,16 +24,17 @@ npm start --production   // start the Ghost server
 5. After you finish your blog, run
 
  ```shell
- cd buster/buster // go into the folder where the buster.py is
- python buster.py generate // buster.py will compile and copy the static resources that your use in your blog
- python buster.py preview  // buster.py will start a local server at port 9000
+npm run generate         // equals to run `python buster.py generate` in the Buster/buster folder
+npm run preview          // open the local server to view the static Ghost built by the step above
+npm run gulp             // use gulp to minify all the static resources using by your static Ghost
 
 // open your browser. access to http://localhost:9000, the static ghost is there.
  ```
+7. Each time you finish writing, just run the `three steps` in `Step 5`. Things are all done well!
  
-6. Commit your root folder to Github repo `username.github.io` in which `username` replace to your own Github username
+8. Commit your root folder to Github repo `username.github.io` in which `username` replace to your own Github username
 
-## How I built this blog?
+## How I built my own blog?
 
 See here: [《“前端养成记”博客上线历程》](http://loyalsoldier.me/my-frontend-cultivation-blog-launched)
 
