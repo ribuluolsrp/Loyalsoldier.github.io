@@ -4,7 +4,10 @@
   "description": "A Frontend-cultivation blog by Loyalsoldier",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "cd ghost && npm start --production",
+    "generate": "cd buster/buster && python buster.py generate",
+    "preview": "cd buster/buster && python buster.py preview",
+    "build": "gulp"
   },
   "repository": {
     "type": "git",
