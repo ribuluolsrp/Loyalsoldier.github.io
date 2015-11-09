@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var autoprefixer = require('gulp-autoprefixer');
-var cssshrink = require('gulp-cssshrink');
+var minifyCss = require('gulp-minify-css');
 var uglify = require('gulp-uglify');
 var image = require('gulp-image');
 var rename = require("gulp-rename");
@@ -30,7 +30,7 @@ gulp.task('css', ['js'], function() {
                     browsers: ['last 2 versions'],
                     cascade: false
                 }))
-               .pipe(cssshrink())
+               .pipe(minifyCss({compatibility: 'ie8'}))
                .pipe(gulp.dest('assets/css/'));
 });
 
