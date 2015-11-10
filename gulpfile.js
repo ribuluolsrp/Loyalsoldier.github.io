@@ -3,7 +3,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var minifyCss = require('gulp-minify-css');
 var uglify = require('gulp-uglify');
 var image = require('gulp-image');
-var rename = require("gulp-rename");
+// var rename = require("gulp-rename");
 
 
 // 压缩图片
@@ -42,13 +42,13 @@ gulp.task('js', ['images'], function() {
 });
 
 // 修改 jquery.min.js 文件名
-gulp.task('rename', function () {
-	return gulp.src('public/*')
-			   .pipe(rename('jquery.min.js'))
-			   .pipe(gulp.dest("public/"));
-});
+// gulp.task('rename', function () {
+// 	return gulp.src('public/*')
+// 			   .pipe(rename('jquery.min.js'))
+// 			   .pipe(gulp.dest("public/"));
+// });
 
 // 默认任务
-gulp.task('default', ['css', 'rename'], function () {
+gulp.task('default', ['css'], function () {
     console.log('恭喜你，博客优化完成啦！');
 });
