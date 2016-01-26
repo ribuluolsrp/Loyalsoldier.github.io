@@ -1,3 +1,0 @@
-User-agent: *
-Sitemap: http://loyalsoldier.me/sitemap.xml
-Disallow: /ghost/
